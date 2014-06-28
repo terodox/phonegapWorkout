@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, height=device-height, width=device-width, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.css" />
+    <link rel="stylesheet" type="text/css" href="css/calculator.css" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <title>A simple PhoneGap App</title>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/calculatorPage.js"></script>
+  </head>
+  <body>
+  	<div data-role="page" id="appChooser">
+  		<div data-role="header" data-position="fixed">
+  			<h1>Pick an App!</h1>
+  		</div>
+  		<div data-role="main">
+  			<a href="#calculatorPage" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-left">Calculator</a>
+  		</div>
+  		<div data-role="footer" data-position="fixed">
+  			So many options
+  		</div>
+  	</div>
+    <div data-role="page" id="calculatorPage">
+  		<div data-role="header" data-position="fixed">
+  			<a href="#appChooser" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+  			<h1>Calculator</h1>
+  		</div>
+      <div data-role="main" class="calculator">
+        <div class="commandArea">0</div>
+        <div class="row">
+          <button class="calculatorButton" value="1">1</button>
+          <button class="calculatorButton" value="2">2</button>
+          <button class="calculatorButton" value="3">3</button>
+          <button class="calculatorButton" value="add">+</button>
+        </div>
+        <div class="row">
+          <button class="calculatorButton" value="4">4</button>
+          <button class="calculatorButton" value="5">5</button>
+          <button class="calculatorButton" value="6">6</button>
+          <button class="calculatorButton" value="subtract">-</button>
+        </div>
+        <div class="row">
+          <button class="calculatorButton" value="7">7</button>
+          <button class="calculatorButton" value="8">8</button>
+          <button class="calculatorButton" value="9">9</button>
+          <button class="calculatorButton" value="divide">/</button>
+        </div>
+        <div class="row">
+          <button class="calculatorButton" value="clear">C</button>
+          <button class="calculatorButton" value="0">0</button>
+          <button class="calculatorButton" value="equal">=</button>
+          <button class="calculatorButton" value="multiply">X</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+  </body>
+</html>
