@@ -3,14 +3,14 @@ div.calculator {
 }
 div.row {
   height: 28%;
-  width: 100%;
+  width: 92%;
 }
 div.row button {
   display: inline-block;
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 24.5%;
+  width: 23%;
   font-size: 20vw;
 }
 div.commandArea {
