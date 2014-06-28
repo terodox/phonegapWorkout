@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
     <script type="text/javascript" src="js/calculatorPage.js"></script>
+    <script type="text/javascript" src="js/stopWatch.js"></script>
   </head>
   <body>
   	<div data-role="page" id="appChooser">
@@ -19,9 +20,7 @@
   		</div>
   		<div data-role="main">
   			<a href="#calculatorPage" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-left">Calculator</a>
-  		</div>
-  		<div data-role="footer" data-position="fixed">
-  			So many options
+  			<a href="#stopWatch" class="ui-btn ui-corner-all ui-icon-clock ui-btn-icon-left">Stop Watch</a>
   		</div>
   	</div>
     <div data-role="page" id="calculatorPage">
@@ -56,6 +55,19 @@
           <button class="calculatorButton" value="multiply">X</button>
         </div>
       </div>
+    </div>
+    <div data-role="page" id="stopWatch">
+  		<div data-role="header" data-position="fixed">
+  			<a href="#appChooser" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+  			<h1>Stop Watch</h1>
+  		</div>
+  		<div data-role="main" class="stopWatch">
+    		<input type="text" id="stopWatchDisplay" value="" placeholder="Tap Start To Begin" />
+    		<div>
+	    		<button id="stopWatchStartStop" class="stop">Start</button>
+	    		<button id="stopWatchReset">Reset</button>
+    		</div>
+    	</div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
   </body>
